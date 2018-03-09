@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>codage en bande de base </title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!--  créé par khaldi anouar
+       https://www.facebook.com/khaldi.anouar      
+!-->
+<center><div class ="w400 animated bounceInDown">
+    <input id="sb" type="nombre" class="form-control text-center" placeholder="Suite binaire" maxlength="10">
+  <div class="btn-group animated bounceInDown" role="group">
+  <button type="button" class="btn btn-primary btn-block" onclick="dessiner()">Dessiner</button>
+        <a id="download" download="graph.jpg" href="" onclick="downloadCanvas(this);"><button type="button" class="btn btn-danger"download="myImage.jpg">télécharger le graph</button></a>
+  
+    
+
+</div>
+  
+  <div class="radios">
+<table style="width:80%">
+  <tr>
+    <td><label class="radio-inline animated bounceInLeft"><input type="radio" id="bnr" name="g" checked> Code Binaire</label></td>
+    <td><label class="radio-inline animated bounceInDown"><input type="radio" id="nrz" name="g"> code NRZ</label</td> 
+    <td><label class="radio-inline animated bounceInDown"><input type="radio" id="sbp" name="g"> code Bipolaire SIMPLE</label></td>
+    <td><label class="radio-inline animated bounceInRight"><input  type="radio" id="dm" name="g"> code DELAY MODE</label></td> 
+  </tr>
+  <tr>
+    <td><label class="radio-inline animated bounceInLeft"><input type="radio" id="man" name="g"> code Manchester</label></td>
+    <td><label class="radio-inline animated bounceInDown"><input type="radio"  id="man_dif" name="g"> code Manchester différentiel</label></td> 
+    <td><label class="radio-inline animated bounceInDown"><input type="radio"  id="rz" name="g"> Le code RZ</label></td>
+    <td><label class="radio-inline animated bounceInRight"><input type="radio"  id="brz" name="g"> code bipolaire RZ</label></td> 
+  </tr>
+</table>
+    
+    </div>
+</div></center>
+<center>
+  
+</center>
+<center>
+  <canvas id="myCanvas" class="animated swing" width="600" height="300"
+style="border:1px solid #669900;">
+Your browser does not support the canvas element.
+</canvas></center>
+
+        <h6 class="text-center animated fadeInDownBig"><Strong id="signe">créé par <br><a id="signelien"href="https://www.facebook.com/khaldi.anouar" target="_blanck">ŊǾù ŘĒ-iîŋ<a></Strong></h6>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
